@@ -15,6 +15,8 @@ namespace PostduifContext.Models
     }
     public class Packet
     {
+        protected const int headerLength = 5;
+
         public int Length { get; private set; }
         public ActionType ActionType { get; private set; }
         public List<byte> Payload { get; private set; }

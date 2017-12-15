@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using PostduifContext.Models;
+using PostduifServer.CollectionLogic;
 
 namespace PostduifContextClient
 {
@@ -22,14 +23,14 @@ namespace PostduifContextClient
 
         private static void ManipulateData(CollectionManipulationPacket packet)
         {
-            switch (packet.ActionType)
-            {
-                case ActionType.Add:
-                    CollectionContainer.AddToCollection(packet.CollectionName, packet.CollectionData);
-                    break;
-                case ActionType.Update:
-                    CollectionContainer.UpdateCollection(packet.CollectionName, packet.);
-            }
+            //switch (packet.ActionType)
+            //{
+            //    case ActionType.Add:
+            //        CollectionContainer.AddToCollection(packet.CollectionName, packet.CollectionData);
+            //        break;
+            //    case ActionType.Update:
+            //        CollectionContainer.UpdateCollection(packet.CollectionName, packet.);
+            //}
         }
     }
 }

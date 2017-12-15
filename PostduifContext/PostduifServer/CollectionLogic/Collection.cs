@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PostduifContextClient
+namespace PostduifServer.CollectionLogic
 {
-    class Collection
+    public class Collection
     {
         public string Name { get; private set; }
         private List<CollectionItem> CollectionItems;
@@ -15,6 +15,11 @@ namespace PostduifContextClient
         {
             Name = name;
             CollectionItems = collectionItems.ToList();
+        }
+
+        public Collection(string name)
+        {
+            Name = name;
         }
 
         public int Add(IEnumerable<byte> data)

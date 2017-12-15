@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PostduifContextClient
+namespace PostduifServer.CollectionLogic
 {
-    static class CollectionContainer
+    public static class CollectionContainer
     {
         private static List<Collection> Collections = new List<Collection>();
 
@@ -16,7 +16,17 @@ namespace PostduifContextClient
 
         private static Collection GetCollectionByName(string collectionName)
         {
-            return Collections.Single(s => s.Name == collectionName);
+            Collection collection; 
+            try
+            {
+                collection = Collections.Single(s => s.Name == collectionName);
+            }
+            catch (InvalidOperationException ioEx)
+            {
+                collection = new Collection(collectionName);
+                Add(collection);
+            }
+            return collection;
         }
 
         public static int AddToCollection(string collectionName, IEnumerable<byte> data)

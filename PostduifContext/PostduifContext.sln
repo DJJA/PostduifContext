@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostduifContext.DAL", "PostduifContext.DAL\PostduifContext.DAL.csproj", "{2C5C3099-6E57-4D09-95D5-2816E842775B}"
 EndProject
@@ -17,7 +17,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPServer.Net", "TCPServer.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostduifContext.Models", "PostduifContext.Models\PostduifContext.Models.csproj", "{8358AF5D-47F9-4833-B57D-A021D4C8DB9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostduifContextClient", "PostduifContextClient\PostduifContextClient.csproj", "{FF19C27C-6B32-4B9E-9910-CA8F62C23BA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostduifContextClient", "PostduifContextClient\PostduifContextClient.csproj", "{FF19C27C-6B32-4B9E-9910-CA8F62C23BA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostduifServer", "PostduifServer\PostduifServer.csproj", "{39735E68-12A3-4DBA-91AD-30698B4F5E83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostduifServer.Test", "PostduifServer.Test\PostduifServer.Test.csproj", "{172A0BB3-3F43-4A51-8896-40D472286B58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{FF19C27C-6B32-4B9E-9910-CA8F62C23BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF19C27C-6B32-4B9E-9910-CA8F62C23BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF19C27C-6B32-4B9E-9910-CA8F62C23BA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39735E68-12A3-4DBA-91AD-30698B4F5E83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39735E68-12A3-4DBA-91AD-30698B4F5E83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39735E68-12A3-4DBA-91AD-30698B4F5E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39735E68-12A3-4DBA-91AD-30698B4F5E83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{172A0BB3-3F43-4A51-8896-40D472286B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{172A0BB3-3F43-4A51-8896-40D472286B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{172A0BB3-3F43-4A51-8896-40D472286B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{172A0BB3-3F43-4A51-8896-40D472286B58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

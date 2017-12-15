@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PostduifContextClient
+namespace PostduifServer.CollectionLogic
 {
-    class CollectionItem
+    public class CollectionItem
     {
         public int Id { get; private set; }
         public IEnumerable<byte> Data { get; set; }

@@ -1,23 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2003
+VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostduifClient", "PostduifClient\PostduifClient.csproj", "{CAA4C6C9-71CE-4569-A1BF-B457EF9AF2B6}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostduifContext.DAL", "PostduifContext.DAL\PostduifContext.DAL.csproj", "{2C5C3099-6E57-4D09-95D5-2816E842775B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostduifContext.Logic", "PostduifContext.Logic\PostduifContext.Logic.csproj", "{71D9B60D-9F88-4678-978C-0D8E8C72D520}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPClient.standard", "TCPClient.standard\TCPClient.standard.csproj", "{32B45452-740B-4C66-9B76-8B0110293C76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCPClient.standard", "TCPClient.standard\TCPClient.standard.csproj", "{32B45452-740B-4C66-9B76-8B0110293C76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPServer.standard", "TCPServer.standard\TCPServer.standard.csproj", "{CDBFF8B2-B901-4C1A-ABE3-6F761A3EFFC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCPServer.standard", "TCPServer.standard\TCPServer.standard.csproj", "{CDBFF8B2-B901-4C1A-ABE3-6F761A3EFFC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPClient.Core", "TCPClient.Core\TCPClient.Core.csproj", "{2AE0CA34-98A6-4940-BE71-8A91F532B718}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCPClient.Core", "TCPClient.Core\TCPClient.Core.csproj", "{2AE0CA34-98A6-4940-BE71-8A91F532B718}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPServer.Net", "TCPServer.Net\TCPServer.Net.csproj", "{3651A992-5CC1-4B7A-943F-C5B35D695878}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostduifContext.Models", "PostduifContext.Models\PostduifContext.Models.csproj", "{8358AF5D-47F9-4833-B57D-A021D4C8DB9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostduifContext.Models", "PostduifContext.Models\PostduifContext.Models.csproj", "{8358AF5D-47F9-4833-B57D-A021D4C8DB9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostduifContextClient", "PostduifContextClient\PostduifContextClient.csproj", "{FF19C27C-6B32-4B9E-9910-CA8F62C23BA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CAA4C6C9-71CE-4569-A1BF-B457EF9AF2B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CAA4C6C9-71CE-4569-A1BF-B457EF9AF2B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CAA4C6C9-71CE-4569-A1BF-B457EF9AF2B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CAA4C6C9-71CE-4569-A1BF-B457EF9AF2B6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2C5C3099-6E57-4D09-95D5-2816E842775B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2C5C3099-6E57-4D09-95D5-2816E842775B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C5C3099-6E57-4D09-95D5-2816E842775B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,6 +53,10 @@ Global
 		{8358AF5D-47F9-4833-B57D-A021D4C8DB9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8358AF5D-47F9-4833-B57D-A021D4C8DB9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8358AF5D-47F9-4833-B57D-A021D4C8DB9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF19C27C-6B32-4B9E-9910-CA8F62C23BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF19C27C-6B32-4B9E-9910-CA8F62C23BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF19C27C-6B32-4B9E-9910-CA8F62C23BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF19C27C-6B32-4B9E-9910-CA8F62C23BA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

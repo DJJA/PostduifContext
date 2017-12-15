@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PostduifClient
+namespace PostduifContextClient
 {
-    public class PostduifClient
+    class PacketHandler
     {
     }
 }

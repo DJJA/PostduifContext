@@ -7,11 +7,21 @@ namespace PostduifContext.Models
     public class CollectionManipulationPacket : Packet
     {
         public string CollectionName { get; private set; }
+        public IEnumerable<byte> CollectionData { get; private set; }
 
-        public CollectionManipulationPacket(int length, ActionType actionType, string collectionName, List<byte> payload) 
-            : base(length, actionType, payload)
+        public CollectionManipulationPacket(ActionType actionType, string collectionName, byte[] collectionData) 
+            : base(headerLength + 1 + collectionName.Length + collectionData.Length, PacketType.Manipulation)
         {
-            CollectionName = collectionName;
+            WriteBye((byte)actionType);
+            WriteNullTerminatedString(collectionName);
+            WriteByteCollection(collectionData);
+        }
+
+        public CollectionManipulationPacket(byte[] data)
+            : base(data)
+        {
+            CollectionName = ReadNullTerminatedString(headerLength);
+            CollectionData = ReadByteCollection(headerLength, data.Length - headerLength);
         }
     }
 }

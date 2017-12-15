@@ -8,10 +8,16 @@ namespace PostduifContext.Models
     {
         public string ErrorMessage { get; private set; }
 
-        public ErrorPacket(string errorMessage, List<byte> payload) 
-            : base(headerLength + errorMessage.Length, ActionType.Error, payload)
+        public ErrorPacket(string errorMessage) 
+            : base(headerLength + errorMessage.Length, PacketType.Error)
         {
-            ErrorMessage = errorMessage;
+            WriteNullTerminatedString(errorMessage);
+        }
+
+        public ErrorPacket(byte[] data)
+            : base(data)
+        {
+            ErrorMessage = ReadNullTerminatedString(headerLength);
         }
     }
 }

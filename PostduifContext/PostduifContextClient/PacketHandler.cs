@@ -22,14 +22,14 @@ namespace PostduifContextClient
 
         private static void ManipulateData(CollectionManipulationPacket packet)
         {
-            switch (packet.ActionType)
-            {
-                case ActionType.Add:
-                    CollectionContainer.AddToCollection(packet.CollectionName, packet.CollectionData);
-                    break;
-                case ActionType.Update:
-                    CollectionContainer.UpdateCollection(packet.CollectionName, packet.);
-            }
+            //switch (packet.ActionType)
+            //{
+            //    case ActionType.Add:
+            //        CollectionContainer.AddToCollection(packet.CollectionName, packet.CollectionData);
+            //        break;
+            //    case ActionType.Update:
+            //        CollectionContainer.UpdateCollection(packet.CollectionName, packet.);
+            //}
         }
     }
 }
